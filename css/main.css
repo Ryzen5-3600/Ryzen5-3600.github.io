@@ -47,7 +47,7 @@ html, body { height: 100%; }
 body {
   background-color: #FFF;
   font-size: 130%;
-  font-family: calluna, Calluna, Georgia;
+  font-family: 'Righteous', cursive;
   font-weight: 300;
   line-height: 1.55em;
   padding: 0 2em;
@@ -57,7 +57,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #333;
-  font-family: adelle, Adelle, Georgia;
+  font-family: 'Righteous', cursive;
   font-weight: 800;
   text-rendering: optimizeLegibility;
 }
@@ -129,7 +129,7 @@ ul.posts li {
 
 ul.posts span {
   color: #aaa;
-  font-family: "Inconsolata", Consolas, "Courier New", monospace;
+  font-family: 'Righteous', cursive;
   font-size: 80%;
   display: list-item;
 }
@@ -206,13 +206,13 @@ ul.posts span {
 }
 
 pre {
-  font-family: 'PT Mono', Consolas, "Inconsolata", "Courier New", monospace;
+  font-family: 'Righteous', cursive;
   overflow: auto;
   margin: 1em auto;
 }
 
 code {
-  font-family: 'PT Mono', Consolas, "Inconsolata", "Courier New", monospace;
+  font-family: 'Righteous', cursive;
 }
 
 
