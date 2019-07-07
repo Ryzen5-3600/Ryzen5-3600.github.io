@@ -377,7 +377,7 @@ body {
 }
 
 div {
-  background: yellow;
+  background: #f0f0f0;
 }
 
 @media (orientation: landscape) {
@@ -393,6 +393,6 @@ div {
 }
 @media only screen and (max-width: 600px) {
   body {
-    background-color: lightblue;
+    background-color: #f0f0f0;
   }
 }
