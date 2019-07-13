@@ -47,7 +47,7 @@ html, body { height: 100%; }
 body {
   background-color: #FFF;
   font-size: 130%;
-  font-family: 'Righteous', cursive;
+  font-family: 'BenchNine', sans-serif;
   font-weight: 300;
   line-height: 1.55em;
   padding: 0 2em;
@@ -57,7 +57,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #333;
-  font-family: 'Righteous', cursive;
+  font-family: 'BenchNine', sans-serif;
   font-weight: 800;
   text-rendering: optimizeLegibility;
 }
@@ -129,7 +129,7 @@ ul.posts li {
 
 ul.posts span {
   color: #aaa;
-  font-family: 'Righteous', cursive;
+  font-family: 'BenchNine', sans-serif;
   font-size: 80%;
   display: list-item;
 }
@@ -206,13 +206,13 @@ ul.posts span {
 }
 
 pre {
-  font-family: 'Righteous', cursive;
+  font-family: 'BenchNine', sans-serif;
   overflow: auto;
   margin: 1em auto;
 }
 
 code {
-  font-family: 'Righteous', cursive;
+  font-family: 'BenchNine', sans-serif;
 }
 
 
@@ -402,4 +402,11 @@ div {
   padding-right: 30px;
   padding-bottom: 50px;
   padding-left: 80px;
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50px;
 }
