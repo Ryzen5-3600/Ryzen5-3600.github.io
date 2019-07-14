@@ -1,0 +1,35 @@
+CACHE MANIFEST
+
+# Adds the ability to play the game offline.
+# The following comment needs to be updated whenever a change is made.
+# Run `rake appcache:update` to do so
+# Updated: 2019-01-13T21:16:00+01:00
+
+# Game page
+game.html
+
+# CSS
+game_files/style/main.css
+
+# Fonts
+game_files/style/fonts/BenchNine.css
+game_files/style/fonts/BenchNine-Light.otf
+game_files/style/fonts/BenchNine-Regular.otf
+game_files/style/fonts/BenchNine-Bold.otf
+
+# JavaScript
+game_files/js/animframe_polyfill.js
+game_files/js/application.js
+game_files/js/bind_polyfill.js
+game_files/js/classlist_polyfill.js
+game_files/js/game_manager.js
+game_files/js/grid.js
+game_files/js/html_actuator.js
+game_files/js/keyboard_input_manager.js
+game_files/js/local_storage_manager.js
+game_files/js/tile.js
+
+images/favicon.ico
+
+NETWORK:
+*
