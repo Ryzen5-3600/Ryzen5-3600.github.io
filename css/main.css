@@ -410,3 +410,19 @@ div {
   background-color: #555;
   border-radius: 50px;
 }
+@media screen and (min-width: 481px) {
+  #products img {
+	float: left;
+	margin:0 6px 6px 0;
+  }
+  #products .more {
+	clear: left;
+  }
+  #products {
+	margin: 1em;
+  }
+  #testimonials {
+	margin: 1em 5%;
+	border-radious: 16px;
+  }
+}
