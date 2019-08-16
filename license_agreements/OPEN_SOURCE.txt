@@ -15,7 +15,8 @@ all copies or substantial portions of the Software.
 If you use our source code for our site, please give us credit.
 And don't claim to be us: secretwolf98 & Team Unusual, nor don't claim to
 work with us: secretwolf98 & Team Unusual, without any proof of that being
-a correct statement.
+a correct statement. Please don't use our ROMs that is currently in the
+downloads section. You will need to replace those with your own.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
