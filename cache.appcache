@@ -6,6 +6,9 @@ CACHE MANIFEST
 # Run `rake appcache:update` to do so
 # Updated: 2019-01-13T21:16:00+01:00
 
+# Timer page
+timer.html
+
 # XDA page
 xda.html
 
@@ -61,15 +64,20 @@ game_files/js/local_storage_manager.js
 game_files/js/mode_negative.js
 game_files/js/tile.js
 
-images/construction.png
-images/icon.png
-images/favicon.ico
+images/maintenance/construction.png
+images/logo/icon.png
+images/logo/favicon.ico
+images/secretwolf98's_pfp/secretwolf_eyes.png
 
 license_agreements/OPEN_SOURCE.txt
 license_agreements/LICENSE.txt
 
 change-log/change-log.pdf
 change-log/change-log.docx
+
+save_data/background_color_code.txt
+
+unfinished_projects/
 
 README.md
 cache.appcache
