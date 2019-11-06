@@ -1,0 +1,98 @@
+CACHE MANIFEST
+
+# Adds the ability to play the game offline.
+# Adds the ability to view the website offline.
+# The following comment needs to be updated whenever a change is made.
+# Run `rake appcache:update` to do so
+# Updated: 2019-01-13T21:16:00+01:00
+
+# Timer page
+webpages/timer.html
+
+# XDA page
+webpages/xda.html
+
+# Tab4 page
+webpages/tab4.html
+
+# PC specs page
+webpages/pc_specs.html
+
+# Downloads page
+downloads/webpage/downloads.html
+
+# Discord page
+webpages/discord.html
+
+# Maintenance page
+maintenance.html
+
+# Open source page
+license_agreements/webpage/open_source.html
+
+# Home page
+index.html
+
+# Game page
+game_files/webpage/game.html
+
+# CSS
+game_files/style/main.css
+game_files/style/old.css
+game_files/style/main.scss
+game_files/style/helpers.scss
+css/media-query.css
+css/main.css
+css/normalize.css
+
+# Fonts
+game_files/style/fonts/BenchNine.css
+game_files/style/fonts/BenchNine-Light.otf
+game_files/style/fonts/BenchNine-Regular.otf
+game_files/style/fonts/BenchNine-Bold.otf
+
+# JavaScript
+game_files/js/animframe_polyfill.js
+game_files/js/application.js
+game_files/js/bind_polyfill.js
+game_files/js/classlist_polyfill.js
+game_files/js/game_manager.js
+game_files/js/grid.js
+game_files/js/html_actuator.js
+game_files/js/keyboard_input_manager.js
+game_files/js/local_storage_manager.js
+game_files/js/mode_negative.js
+game_files/js/tile.js
+
+images/maintenance/construction.png
+images/logo/icon.png
+images/logo/favicon.ico
+images/secretwolf98's_pfp/secretwolf_eyes.png
+
+license_agreements/OPEN_SOURCE.txt
+license_agreements/LICENSE.txt
+
+change-log/change-log.pdf
+change-log/change-log.docx
+
+save_data/background_color_code.txt
+
+unfinished_projects/
+
+BACKUPS/
+
+downloads/latest_builds/n8013/cm_11_nightly/cm-11-20191129-NIGHTLY-n8013.zip
+downloads/latest_builds/n8013/lineageos_14.1_nightly/lineage-14.1-20191129-NIGHTLY-n8013.zip
+downloads/latest_builds/hummingbird/cm_11_nightly/cm-11-20191129-NIGHTLY-hummingbird.zip
+downloads/latest_builds/ovation/cm_11_nightly/cm-11-20191129-NIGHTLY-ovation.zip
+downloads/latest_builds/t230nu/project/
+downloads/latest_builds/bntv650/twrp/twrp-bntv650.img
+downloads/latest_builds/bntv650/stock_recovery/stock-recovery.img
+downloads/latest_builds/bntv650/stock_firmware_files/
+
+README.md
+cache.appcache
+.gitattributes
+
+NETWORK:
+*
