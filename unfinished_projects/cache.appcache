@@ -7,40 +7,42 @@ CACHE MANIFEST
 # Updated: 2019-01-13T21:16:00+01:00
 
 # Timer page
-webpages/timer.html
+timer.html
 
 # XDA page
-webpages/xda.html
+xda.html
 
 # Tab4 page
-webpages/tab4.html
+tab4.html
 
 # PC specs page
-webpages/pc_specs.html
+pc_specs.html
 
 # Downloads page
-downloads/webpage/downloads.html
+downloads.html
 
 # Discord page
-webpages/discord.html
+discord.html
 
 # Maintenance page
 maintenance.html
 
 # Open source page
-license_agreements/webpage/open_source.html
+open_source.html
 
 # Home page
 index.html
 
 # Game page
-game_files/webpage/game.html
+game.html
 
 # CSS
 game_files/style/main.css
 game_files/style/old.css
 game_files/style/main.scss
 game_files/style/helpers.scss
+game_files/style/normalize.css
+game_files/style/normalize.scss
 css/media-query.css
 css/main.css
 css/normalize.css
