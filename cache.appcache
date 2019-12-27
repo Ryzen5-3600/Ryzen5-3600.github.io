@@ -6,9 +6,6 @@ CACHE MANIFEST
 # Run `rake appcache:update` to do so
 # Updated: 2019-01-13T21:16:00+01:00
 
-# Timer page
-timer.html
-
 # XDA page
 xda.html
 
@@ -41,6 +38,8 @@ game_files/style/main.css
 game_files/style/old.css
 game_files/style/main.scss
 game_files/style/helpers.scss
+game_files/style/normalize.css
+game_files/style/normalize.scss
 css/media-query.css
 css/main.css
 css/normalize.css

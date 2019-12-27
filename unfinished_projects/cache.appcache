@@ -6,9 +6,6 @@ CACHE MANIFEST
 # Run `rake appcache:update` to do so
 # Updated: 2019-01-13T21:16:00+01:00
 
-# Timer page
-timer.html
-
 # XDA page
 xda.html
 
@@ -80,17 +77,6 @@ change-log/change-log.docx
 save_data/background_color_code.txt
 
 unfinished_projects/
-
-BACKUPS/
-
-downloads/latest_builds/n8013/cm_11_nightly/cm-11-20191129-NIGHTLY-n8013.zip
-downloads/latest_builds/n8013/lineageos_14.1_nightly/lineage-14.1-20191129-NIGHTLY-n8013.zip
-downloads/latest_builds/hummingbird/cm_11_nightly/cm-11-20191129-NIGHTLY-hummingbird.zip
-downloads/latest_builds/ovation/cm_11_nightly/cm-11-20191129-NIGHTLY-ovation.zip
-downloads/latest_builds/t230nu/project/
-downloads/latest_builds/bntv650/twrp/twrp-bntv650.img
-downloads/latest_builds/bntv650/stock_recovery/stock-recovery.img
-downloads/latest_builds/bntv650/stock_firmware_files/
 
 README.md
 cache.appcache
