@@ -9,9 +9,6 @@ CACHE MANIFEST
 # XDA page
 xda.html
 
-# Tab4 page
-tab4.html
-
 # PC specs page
 pc_specs.html
 
@@ -70,9 +67,6 @@ images/secretwolf98's_pfp/secretwolf_eyes.png
 
 license_agreements/OPEN_SOURCE.txt
 license_agreements/LICENSE.txt
-
-change-log/change-log.pdf
-change-log/change-log.docx
 
 save_data/background_color_code.txt
 
