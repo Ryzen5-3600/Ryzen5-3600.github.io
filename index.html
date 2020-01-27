@@ -1,94 +1,118 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta charset="utf-8">
-	<meta name="author" content="secretwolf98">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style type="text/css">
-	 body {
-	    font-family: sans-serif;
-	    font-size:large;
-	    }
-	  cite {
-	    font-family: serfif;
-	    font-style: italic;
-	    }
-	body{
-    text-align: center;
+<html>
+<title>Team Unusual: Coming soon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
 }
-	display: black; margin: auto;
-	{
-    padding: 0px 5px 0 5px;
-    text-align: center;
-    color: #2c2c2c;
-    max-width: 1500px;
-    margin: 0px auto 40px;
-    overflow: hidden;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-	h1 {
-	background-color: #f0f0f0;
-	border-radius: 10px;
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background: url('https://github.com/secretwolf98/secretwolf98.github.io/blob/master/images/logo/icon.png');
+  min-height: 100%;
 }
-	div {
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
 }
-   .circle {
-   height: 50px;
-   width: 50px;
-   background-color: #555;
-   border-radius: 50px;
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">TEAM <span class="w3-hide-small">UNUSUAL</span> </span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">COMING SOON:</h3>
+  <p class="w3-center"><em>Saturday, May 23, 2020.</em></p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p></p>
+    </div>
+  </div>
+
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
 }
-	</style>
-	<title>Team Unusual: Maintenance</title>
-	<meta name="description" content="Secretwolf98's services are free and secretwolf98 don't expect any money in return for secretwolf98's services. And secretwolf98's free services are open source.">
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" type="text/css" media="screen and (max-width: 360px)" href="portrait.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 361px) and (max-width: 480px)" href="css/media-query.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="css/media-query.css">
-	<link href="https://fonts.googleapis.com/css?family=BenchNine&display=swap" rel="stylesheet">
-	<h1 {text-shadow:0.1em 0.1em #aaaaaa}>
-	<h1 text-shadow:offset-x offset-y color;>
-	<h1 text-shadow: 0.1em 0.1em #aaaaaa .2em;>
-	<h1 text-shadow: 0px 3px 0px #b2a98f,
-					 0px 7px 5px rgba(0,0,0,0.15),
-					 0px 12px 1px rgba(0,0,0,0.1),
-					 0px 17px 17px rgba(0,0,0,1);>
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
-	<meta name="format-detection" content="telephone=no" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body style="color: black;
-		 background-color: #53767d;
-		 font-size: 12pt;
-		 font-family: sans-serif;">
-	<div id="container">
-	  <nav id="topnav">
-		<b>| <a href="game.html"><button type="button">SECRETWOLF98'S OWN VERSION OF 2048 (MODIFIED)</button></a> |</b>
-		<b><a href="open_source.html"><button type="button">OPEN SOURCE</button></a> |</b>
-	  </nav>
-	<div id="content">
-	  <h1><b>Our website is currently under maintenance. The new and improved website will be out on Saturday, May 23, 2020.</b></h1>
-	  <p><b></b></p>
-	  <p><b></b></p>
-	  <figure id="home-image">
-	    <img src="images/maintenance/construction.png" alt="Construction"
-	    width="190" height="190" alt=""
-					   class="shadowfilter">
-	  <figcaption class="warning"><b>&copy;secretwolf98 all rights reserved.</b></figcaption>
-	  </figure>
-	 </div>
-	 <footer>
-	 <b>&copy;secretwolf98 -- 2020.</b>
-	 </footer>
-       </div>
-    </body>
- </html>
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
