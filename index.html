@@ -26,9 +26,87 @@
 }
 	div {
 }
+.-sticky {
+  position: -webkit-sticky; // safari
+  position: sticky;
+  top: 12px; // will stick at this point
+}
+
+nav {
+  width: 715px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 21px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+  padding: 0 32px;
+  box-sizing: border-box;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  .nav-item {
+    color: #505050;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    line-height: 42px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      color: #44BF75;
+    }
+  }
+}
+
+.content {
+  margin-top: 0px;
+}
+
+strong {
+  color: #44BF75;
+}
+
+html, body {
+  height: auto;
+}
+.clip-text {
+  background: url(images/logo/4096.gif);
+  background-size: cover;
+  background-position: center;
+  
+  -webkit-background-clip: text;
+  color: transparent; // set to transparent, otherwise won't see the background
+  
+  width: 300px;
+  height: 100px;
+  box-sizing: border-box;
+  font-size: 58px;
+  font-weight: bold;
+  text-align: right;
+  line-height: 155px;
+  flex-shrink: 0;
+}
+@keyframes animation {
+  from {
+    letter-spacing: 20px;
+  }
+  to {
+    letter-spacing: 0;
+  }
+}
+
+.animated {
+  animation: animation 2s ease;
+}
+
+h2 {
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 	</style>
 	<!-- Top nav bar title. -->
     <title>Team Unusual: 4096</title>
+	<link rel="shortcut icon" href="images/logo/favicon.ico">
 	<!-- Website services description. -->
 	<meta name="description" content="Ryzen5-3600's services are free and Ryzen5-3600 don't expect any money in return for Ryzen5-3600's services. And Ryzen5-3600's free services are open source.">
 	<!-- Website styling. -->
@@ -67,14 +145,19 @@
 	<div id="container">
     <div class="container">
 	<!-- Webite navagation. -->
-	<nav id="topnav">
-	<b><a href="https://ryzen5-3600.com/"><button type="button">HOME</button></a></b>
-	<b><a href="https://www.patreon.com/Ryzen5_3600"><button type="button">SUPPORT THE PATREON</button></a></b>
-	<b><a href="https://discord.gg/jupHd5q"><button type="button">JOIN THE DISCORD</button></a></b>
-	<b><a href="license_agreements/OPEN_SOURCE.txt"><button type="button">OPEN SOURCE</button></a></b>
+	<div class="container -column">
+  <nav class="-sticky">
+    <a href="https://ryzen5-3600.com/" class="nav-item">HOME</a>
+    <a href="https://www.patreon.com/Ryzen5_3600" class="nav-item">SUPPORT THE PATREON</a>
+	<a href="https://discord.gg/jupHd5q" class="nav-item">JOIN THE DISCORD</a>
+    <a href="license_agreements/OPEN_SOURCE.txt" class="nav-item">OPEN SOURCE</a>
+  </nav>
+  <div class="content">
+  </div>
+</div>
 	<div id="content">
     <div class="heading">
-    <h1 class="title"><b>4096</b></h1>
+    <h1 class="title"><b><div class="container"><div class="clip-text">4096.</div></div></b></h1>
     <div class="scores-container">
     <div class="score-container">0</div>
     <div class="best-container">0</div>
@@ -153,7 +236,9 @@
 	 <!-- Last website update. -->
 	 <footer>
 	 <br>
-	 <strong class=""><b>The website was last updated on:</b></strong> <b>September 3, 2020</b>
+	 <div class="container">
+     <h2 class="animated">The website was last updated on:</h2><div> <b><strong>September 23, 2020</strong></b>
+	 <div>
 	 </footer>
     </p>
     <hr>
