@@ -17,7 +17,7 @@ const CACHE_URLS = [
   'images/logo/4096.gif',
   'images/logo/favicon.ico',
   'music/halloween.mp3',
-  'music/main.mp3',
+  'music/normal.mp3',
   'music/christmas.mp3',
 ];
 
