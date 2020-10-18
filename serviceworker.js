@@ -13,6 +13,12 @@ const CACHE_URLS = [
   'game_files/js/local_storage_manager.js',
   'game_files/js/game_manager.js',
   'game_files/js/application.js',
+  'images/logo/icon2.png',
+  'images/logo/4096.gif',
+  'images/logo/favicon.ico',
+  'music/halloween.mp3',
+  'music/main.mp3',
+  'music/christmas.mp3',
 ];
 
 const OPTIONAL_CACHE_URLS = [

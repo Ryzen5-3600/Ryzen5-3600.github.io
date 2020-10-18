@@ -42,14 +42,21 @@ game_files/js/tile.js
 
 images/maintenance/construction.png
 images/logo/icon.png
+images/logo/icon2.png
+images/logo/4096.gif
 images/logo/favicon.ico
 images/secretwolf98's_pfp/secretwolf_eyes.png
+
+music/halloween.mp3
+music/main.mp3
+music/christmas.mp3
 
 license_agreements/OPEN_SOURCE.txt
 license_agreements/LICENSE.txt
 
 README.md
 cache.appcache
+serviceworker.js
 .gitattributes
 
 NETWORK:
