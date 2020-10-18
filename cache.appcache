@@ -6,29 +6,9 @@ CACHE MANIFEST
 # Run `rake appcache:update` to do so
 # Updated: 2019-01-13T21:16:00+01:00
 
-# XDA page
-xda.html
-
-# PC specs page
-pc_specs.html
-
-# Downloads page
-downloads.html
-
-# Discord page
-discord.html
-
-# Maintenance page
-maintenance.html
-
-# Open source page
-open_source.html
 
 # Home page
 index.html
-
-# Game page
-game.html
 
 # CSS
 game_files/style/main.css
@@ -67,10 +47,6 @@ images/secretwolf98's_pfp/secretwolf_eyes.png
 
 license_agreements/OPEN_SOURCE.txt
 license_agreements/LICENSE.txt
-
-save_data/background_color_code.txt
-
-unfinished_projects/
 
 README.md
 cache.appcache

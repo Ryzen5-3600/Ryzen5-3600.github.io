@@ -296,8 +296,8 @@ h2 {
 	 <br>
 	 <div class="container">
 	 <h2 class="animated">The website was created on:</h2><div> <b><strong>July 4, 2019</strong></b>
-     <h2 class="animated">The website was last updated on:</h2><div> <b><strong>October 17, 2020</strong></b>
-	 <h2 class="animated">Revision version:</h2><div> <b><strong>v147</strong></b>
+     <h2 class="animated">The website was last updated on:</h2><div> <b><strong>October 18, 2020</strong></b>
+	 <h2 class="animated">Revision version:</h2><div> <b><strong>v148</strong></b>
 	 <div>
 	 </footer>
     </p>
@@ -317,5 +317,12 @@ h2 {
     <script src="game_files/js/local_storage_manager.js"></script>
     <script src="game_files/js/game_manager.js"></script>
     <script src="game_files/js/application.js"></script>
+	 <script>
+       if ('serviceWorker' in navigator) {
+         navigator.serviceWorker.register('/serviceworker.js', {
+           scope: './'
+         });
+       }
+  </script>
     </body>
     </html>
