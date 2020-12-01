@@ -5,6 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta charset="utf-8">
 	<html manifest="cache.appcache">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- Website author. -->
 	<meta name="author" content="Ryzen5-3600">
 	<!-- Website styling. -->
@@ -12,6 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';">
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<style type="text/css">
 	 body {
 	    font-family: sans-serif;
@@ -244,6 +246,7 @@ document.onkeydown = function(e) {
         var appCache = window.applicationCache;
         appCache.addEventListener('updateready', handleCacheEvent, false);
         appCache.update();
+}
 </style>
 	<!-- Top nav bar title. -->
         <title>Team Unusual: Thank you!</title>
@@ -252,12 +255,12 @@ document.onkeydown = function(e) {
 	<!-- Website styling. -->
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 360px)" href="game_files/css/portrait.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 361px) and (max-width: 480px)" href="game_files/css/landscape.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="game_files/css/desktop.css">
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 361px) and (max-width: 480px)" href="game_files/css/landscape.css">
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="game_files/css/desktop.css">
 	<link rel="stylesheet" href="game_files/style/normalize.css">
 	<link rel="stylesheet" href="game_files/style/main.css">
 	<link rel="stylesheet" type="text/css" media="screen and (min-width: 361px) and (max-width: 480px)" href="game_files/css/media-query.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="game_files/css/media-query.css">
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="game_files/css/media-query.css">
 	<link href="https://fonts.googleapis.com/css?family=BenchNine&display=swap" rel="stylesheet">
 	<h1 {text-shadow:0.1em 0.1em #aaaaaa}>
 	<h1 text-shadow:offset-x offset-y color;>
@@ -272,14 +275,14 @@ document.onkeydown = function(e) {
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Global site tag (gtag.js) - Google Analytics. -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176787919-2"></script>
-    <script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176787919-2"></script>
+        <script>
      window.dataLayer = window.dataLayer || [];
      function gtag(){dataLayer.push(arguments);}
      gtag('js', new Date());
 
      gtag('config', 'UA-176787919-2');
-    </script>
+        </script>
 	<audio autoplay loop>
       <source src="music/normal.mp3">
 	Error! Your browser does not support audio playback. Please upgrade to a newer version or switch to a different browser that supports audio playback.
@@ -294,7 +297,7 @@ document.onkeydown = function(e) {
     <div class="container">
 	<hr>
     <p>
-	I want to say first of all, thank you for joining me in this HTML test project that I have created<br> almost 2 years ago. As of January 1, 2020, this game, 4096, will no longer being updated. You can also see you can't currently play 4096, that is only temporary.<br> The final update will be up and ready to be used<br> after the new year. 
+	I want to say first of all, thank you for joining me in this HTML test project that I have created<br> almost 2 years ago. As of January 1, 2020, this game, 4096, will no longer be updated. You can see you can't currently play 4096, that is only temporary.<br> The final update will be up and ready to be used<br> after the new year. 
 	</p>
 	<hr>
 	 <script>
@@ -303,6 +306,6 @@ document.onkeydown = function(e) {
            scope: './'
          });
        }
-  </script>
+         </script>
     </body>
     </html>
