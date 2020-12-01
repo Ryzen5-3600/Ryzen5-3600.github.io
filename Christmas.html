@@ -5,6 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta charset="utf-8">
 	<html manifest="cache.appcache">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- Website author. -->
 	<meta name="author" content="Ryzen5-3600">
 	<!-- Website styling. -->
@@ -12,6 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';">
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<style type="text/css">
 	 body {
 	    font-family: sans-serif;
@@ -244,6 +246,7 @@ document.onkeydown = function(e) {
         var appCache = window.applicationCache;
         appCache.addEventListener('updateready', handleCacheEvent, false);
         appCache.update();
+}
 	</style>
 	<!-- Top nav bar title. -->
         <title>Team Unusual: 4096, Christmas</title>
@@ -418,12 +421,12 @@ document.onkeydown = function(e) {
     <script src="game_files/js/local_storage_manager.js"></script>
     <script src="game_files/js/game_manager.js"></script>
     <script src="game_files/js/application.js"></script>
-	 <script>
+	<script>
        if ('serviceWorker' in navigator) {
          navigator.serviceWorker.register('/serviceworker.js', {
            scope: './'
          });
        }
-  </script>
+    </script>
     </body>
     </html>
