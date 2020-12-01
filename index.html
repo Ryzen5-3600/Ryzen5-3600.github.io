@@ -73,6 +73,14 @@ strong {
   color: #44BF75;
 }
 
+created {
+  color: #A4A4A4;
+}
+
+instructions {
+  color: #0489B1;
+}
+
 html, body {
   height: auto;
 }
@@ -247,6 +255,10 @@ document.onkeydown = function(e) {
         appCache.addEventListener('updateready', handleCacheEvent, false);
         appCache.update();
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 </style>
 	<!-- Top nav bar title. -->
         <title>Team Unusual: 4096, Normal</title>
@@ -256,12 +268,12 @@ document.onkeydown = function(e) {
 	<!-- Website styling. -->
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 360px)" href="game_files/css/portrait.css">
-        <link rel="stylesheet" type="text/css" media="screen and (min-width: 361px) and (max-width: 480px)" href="game_files/css/landscape.css">
-    	<link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="game_files/css/desktop.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 361px) and (max-width: 480px)" href="game_files/css/landscape.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="game_files/css/desktop.css">
 	<link rel="stylesheet" href="game_files/style/normalize.css">
 	<link rel="stylesheet" href="game_files/style/main.css">
 	<link rel="stylesheet" type="text/css" media="screen and (min-width: 361px) and (max-width: 480px)" href="game_files/css/media-query.css">
-    	<link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="game_files/css/media-query.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="game_files/css/media-query.css">
 	<link href="https://fonts.googleapis.com/css?family=BenchNine&display=swap" rel="stylesheet">
 	<h1 {text-shadow:0.1em 0.1em #aaaaaa}>
 	<h1 text-shadow:offset-x offset-y color;>
@@ -306,6 +318,9 @@ document.onkeydown = function(e) {
   <div class="content">
   </div>
 </div>
+<body id='body'>
+<div id='display'></div>
+<button onclick="modes()">Dark mode</button><br>
 	<div id="content">
     <div class="heading">
     <h1 class="title"><b><div class="container"><div class="clip-text">4096.</div></div></b></h1>
@@ -318,7 +333,7 @@ document.onkeydown = function(e) {
 	<!-- Game buttons. -->
     <body>
     <div class="above-game">
-    <p class="game-intro"><b>Put the numbers together and get to the</b> <strong><b>4096 tile!</b></strong></p>
+    <p class="game-intro"><b>Put the numbers together and get to the</b> <instructions><b>4096 tile!</b></instructions></p>
     <a class="restart-button"><b>New game (This can't be undone)</b></a>
     </div>
     <div class="game-container">
@@ -363,7 +378,7 @@ document.onkeydown = function(e) {
     <p>
 	<!-- Game explaination. -->
     <p class="game-explanation">
-    <strong class="important"><b>How to play 4096:<br></b></strong> <b>Use your</b> <strong><b>arrow keys or your finger on the screen</b></strong> <b>to move the tiles. When 2 tiles with the same number touch, they will</b> <strong><b>merge into some other tiles!</b></strong> <b>You can press CTRL + Z on a PC or CMD + Z on a Mac<br> to undo your turn up to 6 times.</b>
+    <instructions> <class="important"><b>How to play 4096:<br></b></instructions> <b>Use your</b> <strong><b>arrow keys or your finger on the screen</b></strong> <b>to move the tiles. When 2 tiles with the same number touch, they will</b> <strong><b>merge into some other tiles!</b></strong> <b>You can press CTRL + Z on a PC or CMD + Z on a Mac<br> to undo your turn up to 6 times.</b>
     </p>
     <hr>
     <p>
@@ -408,7 +423,7 @@ document.onkeydown = function(e) {
     <hr>
     <p>
 	<!-- Who the game was created by. -->
-    <strong class=""><b>Created by:</b></strong> <a href="http://github.com/Ryzen5-3600" target="_blank"><b>Ryzen5-3600</b></a></p>
+    <h2 class="animated">Created by:</h2><div> <a href="http://github.com/Ryzen5-3600" target="_blank"><b><created>Ryzen5-3600</created></b>
     </div>
 	<!-- Game scripts. -->
     <script src="game_files/js/bind_polyfill.js"></script>
@@ -427,6 +442,28 @@ document.onkeydown = function(e) {
            scope: './'
          });
        }
+    </script>
+	<script>
+var x = 1;
+while(x < 10){
+	document.getElementById('display').innerHTML += x + "<br>";
+	x++;
+	x++;
+}//end while
+for(var y = 1; y <10; y++){
+	document.getElementById('display').innerHTML += y + "<br>";
+}//end for
+function changeBG(){
+	var r = Math.floor(Math.random()*100);
+	var g = Math.floor(Math.random()*100);
+	var b = Math.floor(Math.random()*100);
+	var element = document.body;
+	element.style.backgroundColor = "#"+r+g+b;
+}//end function
+function modes() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
     </script>
     </body>
     </html>
