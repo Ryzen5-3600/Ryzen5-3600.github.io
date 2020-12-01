@@ -5,6 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta charset="utf-8">
 	<html manifest="cache.appcache">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- Website author. -->
 	<meta name="author" content="Ryzen5-3600">
 	<!-- Website styling. -->
@@ -244,6 +245,7 @@ document.onkeydown = function(e) {
         var appCache = window.applicationCache;
         appCache.addEventListener('updateready', handleCacheEvent, false);
         appCache.update();
+}
 	</style>
 	<!-- Top nav bar title. -->
         <title>Team Unusual: 4096</title>
@@ -253,12 +255,12 @@ document.onkeydown = function(e) {
 	<!-- Website styling. -->
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 360px)" href="game_files/css/portrait.css">
-        <link rel="stylesheet" type="text/css" media="screen and (min-width: 361px) and (max-width: 480px)" href="game_files/css/landscape.css">
-        <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="game_files/css/desktop.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 361px) and (max-width: 480px)" href="game_files/css/landscape.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="game_files/css/desktop.css">
 	<link rel="stylesheet" href="game_files/style/normalize.css">
 	<link rel="stylesheet" href="game_files/style/main.css">
 	<link rel="stylesheet" type="text/css" media="screen and (min-width: 361px) and (max-width: 480px)" href="game_files/css/media-query.css">
-        <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="game_files/css/media-query.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="game_files/css/media-query.css">
 	<link href="https://fonts.googleapis.com/css?family=BenchNine&display=swap" rel="stylesheet">
 	<h1 {text-shadow:0.1em 0.1em #aaaaaa}>
 	<h1 text-shadow:offset-x offset-y color;>
@@ -282,7 +284,7 @@ document.onkeydown = function(e) {
      gtag('config', 'UA-176787919-2');
     </script>
 	<audio autoplay loop>
-      <source src="music/normal2.mp3">
+      <source src="music/christmas.mp3">
 	Error! Your browser does not support audio playback. Please upgrade to a newer version or switch to a different browser that supports audio playback.
     </audio>
 	<body oncontextmenu="return false">
@@ -387,8 +389,8 @@ document.onkeydown = function(e) {
 	 <br>
 	 <div class="container">
 	 <h2 class="animated">The website was created on:</h2><div> <b><strong>July 4, 2019</strong></b>
-     <h2 class="animated">The website was last updated on:</h2><div> <b><strong>November 1, 2020</strong></b>
-	 <h2 class="animated">Revision version:</h2><div> <b><strong>v168</strong></b>
+     <h2 class="animated">The website was last updated on:</h2><div> <b><strong>December 1, 2020</strong></b>
+	 <h2 class="animated">Revision version:</h2><div> <b><strong>v169</strong></b>
 	 <div>
 	 </footer>
     </p>
@@ -408,12 +410,13 @@ document.onkeydown = function(e) {
     <script src="game_files/js/local_storage_manager.js"></script>
     <script src="game_files/js/game_manager.js"></script>
     <script src="game_files/js/application.js"></script>
-	 <script>
+	<script>
        if ('serviceWorker' in navigator) {
          navigator.serviceWorker.register('/serviceworker.js', {
            scope: './'
          });
        }
-  </script>
+    </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     </body>
     </html>
