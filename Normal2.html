@@ -73,6 +73,14 @@ strong {
   color: #44BF75;
 }
 
+created {
+  color: #A4A4A4;
+}
+
+instructions {
+  color: #0489B1;
+}
+
 html, body {
   height: auto;
 }
@@ -247,6 +255,10 @@ document.onkeydown = function(e) {
         appCache.addEventListener('updateready', handleCacheEvent, false);
         appCache.update();
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 	</style>
 	<!-- Top nav bar title. -->
         <title>Team Unusual: 4096, Normal2</title>
@@ -306,6 +318,9 @@ document.onkeydown = function(e) {
   <div class="content">
   </div>
 </div>
+<body id='body'>
+<div id='display'></div>
+<button onclick="modes()">Dark mode</button><br>
 	<div id="content">
     <div class="heading">
     <h1 class="title"><b><div class="container"><div class="clip-text">4096.</div></div></b></h1>
@@ -318,7 +333,7 @@ document.onkeydown = function(e) {
 	<!-- Game buttons. -->
     <body>
     <div class="above-game">
-    <p class="game-intro"><b>Put the numbers together and get to the</b> <strong><b>4096 tile!</b></strong></p>
+    <p class="game-intro"><b>Put the numbers together and get to the</b> <instructions><b>4096 tile!</b></instructions></p>
     <a class="restart-button"><b>New game (This can't be undone)</b></a>
     </div>
     <div class="game-container">
@@ -408,7 +423,7 @@ document.onkeydown = function(e) {
     <hr>
     <p>
 	<!-- Who the game was created by. -->
-    <strong class=""><b>Created by:</b></strong> <a href="http://github.com/Ryzen5-3600" target="_blank"><b>Ryzen5-3600</b></a></p>
+    <h2 class="animated">Created by:</h2><div> <a href="http://github.com/Ryzen5-3600" target="_blank"><b><created>Ryzen5-3600</created></b>
     </div>
 	<!-- Game scripts. -->
     <script src="game_files/js/bind_polyfill.js"></script>
@@ -421,12 +436,34 @@ document.onkeydown = function(e) {
     <script src="game_files/js/local_storage_manager.js"></script>
     <script src="game_files/js/game_manager.js"></script>
     <script src="game_files/js/application.js"></script>
-	<script>
+    <script>
        if ('serviceWorker' in navigator) {
          navigator.serviceWorker.register('/serviceworker.js', {
            scope: './'
          });
        }
+    </script>
+	<script>
+var x = 1;
+while(x < 10){
+	document.getElementById('display').innerHTML += x + "<br>";
+	x++;
+	x++;
+}//end while
+for(var y = 1; y <10; y++){
+	document.getElementById('display').innerHTML += y + "<br>";
+}//end for
+function changeBG(){
+	var r = Math.floor(Math.random()*100);
+	var g = Math.floor(Math.random()*100);
+	var b = Math.floor(Math.random()*100);
+	var element = document.body;
+	element.style.backgroundColor = "#"+r+g+b;
+}//end function
+function modes() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
     </script>
     </body>
     </html>
