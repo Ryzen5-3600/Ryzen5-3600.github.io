@@ -39,7 +39,7 @@
 }
 
 nav {
-  width: 490px;
+  width: 660px;
   allign: center 100px;
   height: 40px;
   background-color: #fff;
@@ -255,10 +255,6 @@ document.onkeydown = function(e) {
         appCache.addEventListener('updateready', handleCacheEvent, false);
         appCache.update();
 }
-.dark-mode {
-  background-color: black;
-  color: white;
-}
 	</style>
 	<!-- Top nav bar title. -->
         <title>Team Unusual: 4096, Halloween</title>
@@ -312,15 +308,14 @@ document.onkeydown = function(e) {
 	<div class="container -column">
   <nav class="-sticky">
 	<a href="https://discord.gg/jupHd5q" class="nav-item">JOIN THE DISCORD</a>
-  <a href="license_agreements/OPEN_SOURCE.txt" class="nav-item">OPEN SOURCE NOTICES</a>
+    <a href="license_agreements/OPEN_SOURCE.txt" class="nav-item">OPEN SOURCE NOTICES</a>
+	<a href="https://www.reddit.com/r/TeamUnusual/" class="nav-item">JOIN THE REDDIT</a>
   </nav>
   <hr>
   <div class="content">
   </div>
 </div>
 <body id='body'>
-<div id='display'></div>
-<button onclick="modes()">Dark mode</button><br>
 	<div id="content">
     <div class="heading">
     <h1 class="title"><b><div class="container"><div class="clip-text">4096.</div></div></b></h1>
@@ -424,6 +419,11 @@ document.onkeydown = function(e) {
     <p>
 	<!-- Who the game was created by. -->
     <h2 class="animated">Created by:</h2><div> <a href="http://github.com/Ryzen5-3600" target="_blank"><b><created>Ryzen5-3600</created></b>
+	<br><br>
+	<figure id="home-image">
+	    <img src="images/Ryzen5-3600s_pfp/NormaBates.png" alt="Ryzen5-3600's Discord profile picture."
+	    width="250" height="180" alt="Ryzen5-3600's Discord profile picture."
+					   class="shadowfilter">
     </div>
 	<!-- Game scripts. -->
     <script src="game_files/js/bind_polyfill.js"></script>
@@ -442,28 +442,6 @@ document.onkeydown = function(e) {
            scope: './'
          });
        }
-    </script>
-	<script>
-var x = 1;
-while(x < 10){
-	document.getElementById('display').innerHTML += x + "<br>";
-	x++;
-	x++;
-}//end while
-for(var y = 1; y <10; y++){
-	document.getElementById('display').innerHTML += y + "<br>";
-}//end for
-function changeBG(){
-	var r = Math.floor(Math.random()*100);
-	var g = Math.floor(Math.random()*100);
-	var b = Math.floor(Math.random()*100);
-	var element = document.body;
-	element.style.backgroundColor = "#"+r+g+b;
-}//end function
-function modes() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
     </script>
     </body>
     </html>
