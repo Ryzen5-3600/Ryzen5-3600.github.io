@@ -32,6 +32,7 @@ const CACHE_URLS = [
   'Christmas.html',
   'Halloween.html',
   'Normal2.html',
+  '4096.html',
 ];
 
 const OPTIONAL_CACHE_URLS = [
