@@ -9,10 +9,35 @@ CACHE MANIFEST
 
 # Home page
 index.html
-Christmas.html
-Halloween.html
-Normal2.html
-4096.html
+2048-Christmas.html
+2048-Halloween.html
+2048-Normal2.html
+2048-Normal.html
+4096-Christmas.html
+4096-Halloween.html
+4096-Normal2.html
+4096-Normal.html
+4096-importantNotice.html
+8192-Christmas.html
+8192-Halloween.html
+8192-Normal2.html
+8192-Normal.html
+
+1000Years/index.html
+1000Years/2048-Christmas.html
+1000Years/2048-Halloween.html
+1000Years/2048-Normal2.html
+1000Years/2048-Normal.html
+1000Years/4096-Christmas.html
+1000Years/4096-Halloween.html
+1000Years/4096-Normal2.html
+1000Years/4096-Normal.html
+1000Years/4096-importantNotice.html
+1000Years/8192-Christmas.html
+1000Years/8192-Halloween.html
+1000Years/8192-Normal2.html
+1000Years/8192-Normal.html
+1000Years/gallery.html
 
 # CSS
 game_files/style/main.css
@@ -43,17 +68,41 @@ game_files/js/tile.js
 
 images/maintenance/construction.png
 images/logo/icon.png
+images/logo/1000YearsLater.png
 images/logo/icon2.png
 images/logo/icon3.png
+images/logo/2048.gif
 images/logo/4096.gif
+images/logo/8192.gif
 images/logo/favicon.ico
 images/Ryzen5-3600s_pfp/secretwolf_eyes.png
 images/Ryzen5-3600s_pfp/NormaBates.png
+images/gallery/1.png
+images/gallery/2.png
+images/gallery/3.png
+images/gallery/4.png
+images/gallery/5.png
+images/gallery/6.png
+images/gallery/7.png
+images/gallery/8.png
+images/gallery/9.png
+images/gallery/10.png
+images/gallery/11.png
+images/gallery/12.png
+images/gallery/13.png
+images/gallery/14.png
+images/gallery/15.png
+images/gallery/16.png
+images/gallery/17.png
+images/gallery/18.png
+images/gallery/19.png
+images/gallery/20.png
 
 music/halloween.mp3
 music/normal.mp3
 music/normal2.mp3
 music/christmas.mp3
+music/main.mp3
 
 license_agreements/OPEN_SOURCE.txt
 license_agreements/LICENSE.txt
