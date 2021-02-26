@@ -6,170 +6,12 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<style type="text/css">
-strong {
-  color: #44BF75;
-}
-@keyframes animation {
-  from {
-    letter-spacing: 20px;
-  }
-  to {
-    letter-spacing: 0;
-  }
-}
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
-}
-@-ms-viewport {
-  width: device-width ;
-}
-@media screen and (max-width:320px) {
-  /* CSS for screens that are 320 pixels or less will be put in this section */
-}
-@media screen and (min-width:320px) and (max-width:640px) {
-  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
-}
-/* code that is here, until the first @media block, will apply to any screen size */
-#somethingorother {
-  width: 800px ;
-}
-
-@media screen and (max-width: 320px) {
-  /* comes into effect for screens less than or equal to 320 pixels */
-  #somethingorother {
-    width: 120px ;
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 480px) {
-  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
-  #somethingorother {
-    width: 320px ;
-  }
-}
-@media screen and (min-width: 481px) {
-  /* comes into effect for screens larger than or equal to 481 pixels */
-  #somethingorother {
-    width: 480px ;
-  }
-}
-
-/* code that is here will apply to any screen size */
-@media screen and (orientation:portrait) {
-  /* ... */
-}
-@media screen and (orientation: landscape) {
-  /* ... */
-}
-@media only screen and (max-width: 480px) {
-  /* ... */
-}
-@media not (max-width: 639px) {
-/* CSS rules for any device that is wider than 639 pixels */
-}
-document.onkeydown = function(e) {
-  if(event.keyCode == 123) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-     return false;
-  }
-}
-    var appCache = window.applicationCache;
-    appCache.addEventListener('cached', function() {
-        /* Cached resource is downloaded */
-    }, false);
-
-    appCache.addEventListener('checking', function() {
-        /*
-           Manifest file is downloaded for the first time
-           or if there is an update in the manifest
-        */
-    }, false);
-
-    appCache.addEventListener('downloading', function() {
-        /* Content is being updated */
-    }, false);
-
-    appCache.addEventListener('error', function() {
-        /* Error occurred */
-    }, false);
-
-    appCache.addEventListener('noupdate', function() {
-        /* No update is available */
-    }, false);
-
-    appCache.addEventListener('obsolete', function() {
-        /* Manifest file cannot be found */
-    }, false);
-
-    appCache.addEventListener('progress', function() {
-        /* Cache file is being downloaded */
-    }, false);
-
-    appCache.addEventListener('updateready', function() {
-        /* All resources for update are downloaded */
-    }, false);
-	    var appCache = window.applicationCache;
-
-    switch (appCache.status) {
-        case 0: /* ApplicationCache.status is UNCACHED */
-            break;
-        case 1: /* ApplicationCache.status is IDLE */
-            break;
-        case 2: /* ApplicationCache.status is CHECKING */
-            break;
-        case 3: /* ApplicationCache.status is DOWNLOADING */
-            break;
-        case 4: /* ApplicationCache.status is UPDATEREADY */
-            break;
-        case 5: /* ApplicationCache.status is OBSOLETE */
-            break;
-        default: break;
-    }
-	        function handleCacheEvent(e) {
-            if (appCache.status == appCache.UPDATEREADY) {
-                try {
-                    window.applicationCache.swapCache();
-                    document.getElementById('log').innerHTML = 'Update is successful';
-                }
-            }
-        }
-    };
-	    var update = function() {
-        var appCache = window.applicationCache;
-        appCache.addEventListener('updateready', handleCacheEvent, false);
-        appCache.update();
-}
-body::-webkit-scrollbar {
-  width: 12px; }
-
-body::-webkit-scrollbar-track {
-  background: #faf8ef;
-  border-radius: 6px; }
-
-body::-webkit-scrollbar-thumb {
-  background: #bbada0;
-  border-radius: 6px; }
-}
-	</style>
-
   <meta name="author" content="Ryzen5-3600">
   <title>1000 Years Later: Home Page</title>
   <meta content="Ryzen5-3600's services are free and Ryzen5-3600 don't expect any money in return for Ryzen5-3600's services. And Ryzen5-3600's free services are open source." name="description">
   <meta content="Ryzen5-3600's services are free and Ryzen5-3600 don't expect any money in return for Ryzen5-3600's services. And Ryzen5-3600's free services are open source." name="keywords">
 
-  <!-- Favicons -->
+  <!-- Website icon -->
   <link href="images/logo/1000YearsLater.png" rel="icon">
 
   <!-- Google Fonts -->
@@ -183,15 +25,9 @@ body::-webkit-scrollbar-thumb {
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Regna - v4.0.1
-  * Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <!-- Background audio -->
@@ -208,12 +44,12 @@ body::-webkit-scrollbar-thumb {
     <div class="container d-flex justify-content-between align-items-center">
 
       <div id="logo">
-        <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+        <a href="index.html"><img src="assets/img/logo.png" alt="1000 Years Later website logo"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Join the Discord</a></li>
+          <li><a class="nav-link scrollto active" href="https://discord.gg/BZcUGSP">Join the Discord</a></li>
           <li class="dropdown"><a href="#"><span>Game music modes</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="#"><span>2048</span> <i class="bi bi-chevron-right"></i></a>
@@ -241,7 +77,7 @@ body::-webkit-scrollbar-thumb {
           </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav><!-- End navbar -->
     </div>
   </header><!-- End Header -->
 
@@ -326,7 +162,7 @@ body::-webkit-scrollbar-thumb {
 	 <br>
      <h2 class="animated">The website was last updated on:</h2><div> <b><strong>February 26, 2021</strong></b><br>
 	 <br>
-	 <h2 class="animated">Revision version:</h2><div> <b><strong>v195</strong></b>
+	 <h2 class="animated">Revision version:</h2><div> <b><strong>v196</strong></b>
 	 <div>
 	 </footer>
 
@@ -352,12 +188,6 @@ body::-webkit-scrollbar-thumb {
         2021 &copy; Copyright <strong>1000 Years Later (Pickuptree#0000), Team Unusual, & Ryzen5-3600 (Xxdarkestwolfxx#1219)</strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
-      -->
         Designed & created by: <a href="http://github.com/Ryzen5-3600">Ryzen5-3600</a>
 		<p>(Xxdarkestwolfxx#1219)</p>
 		<br>
@@ -379,7 +209,7 @@ body::-webkit-scrollbar-thumb {
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
