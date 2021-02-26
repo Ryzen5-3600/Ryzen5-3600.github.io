@@ -1293,3 +1293,6 @@ body::-webkit-scrollbar-thumb {
   background: #bbada0;
   border-radius: 6px; }
 }
+.animated {
+  animation: animation 4s ease;
+}
