@@ -6,6 +6,14 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+<script language="javascript" type="text/javascript">
+function playSound(soundfile) {
+document.getElementById("dummy").innerHTML= "<embed src=\""
++soundfile+"\" hidden=\"true\" autostart=\"true\"
+loop=\"false\" />";
+}
+</script>
+
 <style type="text/css">
 strong {
   color: #44BF75;
@@ -59,6 +67,8 @@ body::-webkit-scrollbar-thumb {
 
 <body>
 
+<span id="dummy"></span>
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex justify-content-between align-items-center">
@@ -74,27 +84,27 @@ body::-webkit-scrollbar-thumb {
             <ul>
               <li class="dropdown"><a href="#"><span>2048</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="2048-Halloween.html">2048 Halloween</a></li>
-                  <li><a href="2048-Normal.html">2048 Normal #1</a></li>
-                  <li><a href="2048-Normal2.html">2048 Normal #2</a></li>
-                  <li><a href="2048-Christmas.html">2048 Christmas</a></li>
-				  <li><a href="2048-No_Music.html">2048 No Music</a></li>
+                  <li><a href="2048-Halloween.html" onclick="playSound('assets/ui/sounds/nav.wav');">2048 Halloween</a></li>
+                  <li><a href="2048-Normal.html" onclick="playSound('assets/ui/sounds/nav.wav');">2048 Normal #1</a></li>
+                  <li><a href="2048-Normal2.html" onclick="playSound('assets/ui/sounds/nav.wav');">2048 Normal #2</a></li>
+                  <li><a href="2048-Christmas.html" onclick="playSound('assets/ui/sounds/nav.wav');">2048 Christmas</a></li>
+				  <li><a href="2048-No_Music.html" onclick="playSound('assets/ui/sounds/nav.wav');">2048 No Music</a></li>
                 </ul>
 				<li class="dropdown"><a href="#"><span>4096</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="4096-Halloween.html">4096 Halloween</a></li>
-                  <li><a href="4096-Normal.html">4096 Normal #1</a></li>
-                  <li><a href="4096-Normal2.html">4096 Normal #2</a></li>
-                  <li><a href="4096-Christmas.html">4096 Christmas</a></li>
-				  <li><a href="4096-No_Music.html">4096 No Music</a></li>
+                  <li><a href="4096-Halloween.html" onclick="playSound('assets/ui/sounds/nav.wav');">4096 Halloween</a></li>
+                  <li><a href="4096-Normal.html" onclick="playSound('assets/ui/sounds/nav.wav');">4096 Normal #1</a></li>
+                  <li><a href="4096-Normal2.html" onclick="playSound('assets/ui/sounds/nav.wav');">4096 Normal #2</a></li>
+                  <li><a href="4096-Christmas.html" onclick="playSound('assets/ui/sounds/nav.wav');">4096 Christmas</a></li>
+				  <li><a href="4096-No_Music.html" onclick="playSound('assets/ui/sounds/nav.wav');">4096 No Music</a></li>
                 </ul>
 				<li class="dropdown"><a href="#"><span>8192</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="8192-Halloween.html">8192 Halloween</a></li>
-                  <li><a href="8192-Normal.html">8192 Normal #1</a></li>
-                  <li><a href="8192-Normal2.html">8192 Normal #2</a></li>
-                  <li><a href="8192-Christmas.html">8192 Christmas</a></li>
-				  <li><a href="8192-No_Music.html">8192 No Music</a></li>
+                  <li><a href="8192-Halloween.html" onclick="playSound('assets/ui/sounds/nav.wav');">8192 Halloween</a></li>
+                  <li><a href="8192-Normal.html" onclick="playSound('assets/ui/sounds/nav.wav');">8192 Normal #1</a></li>
+                  <li><a href="8192-Normal2.html" onclick="playSound('assets/ui/sounds/nav.wav');">8192 Normal #2</a></li>
+                  <li><a href="8192-Christmas.html" onclick="playSound('assets/ui/sounds/nav.wav');">8192 Christmas</a></li>
+				  <li><a href="8192-No_Music.html" onclick="playSound('assets/ui/sounds/nav.wav');">8192 No Music</a></li>
                 </ul>
             </ul>
           </li>
@@ -114,7 +124,7 @@ body::-webkit-scrollbar-thumb {
 	    width="250" height="200" alt="1000 Years Later"
 					   class="shadowfilter">
 	<br><br>
-	<a href="#useful-links" class="btn-get-started">Useful links</a>
+	<a href="#useful-links" onclick="playSound('assets/ui/sounds/nav.wav');" class="btn-get-started">Useful links</a>
     </div>
   </section><!-- End Hero Section -->
 
