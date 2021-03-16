@@ -366,7 +366,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/patricks.jpg) top center;
+  background: url(../img/main.jpg) top center;
   background-size: cover;
   position: relative;
 }
@@ -1139,7 +1139,7 @@ section {
 # CSS
 --------------------------------------------------------------*/
 strong {
-  color: #44BF75;
+  color: #559FAC;
 }
 body::-webkit-scrollbar {
   width: 12px; }
