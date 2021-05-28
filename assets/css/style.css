@@ -366,7 +366,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/main.jpg) top center;
+  background: url(../img/summer.jpg) top center;
   background-size: cover;
   position: relative;
 }
@@ -1166,4 +1166,10 @@ body::-webkit-scrollbar-thumb {
   margin-left: auto;
   margin-right: auto;
   width: 20%;
+}
+.center3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
